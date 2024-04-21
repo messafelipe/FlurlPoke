@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlurlPokeApi", "FlurlPokeApi\FlurlPokeApi.csproj", "{35E70284-CA7A-4A02-93B8-09D2D1103435}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlurlPokeApi", "FlurlPokeApi\FlurlPokeApi.csproj", "{FF7C7485-2E76-447D-B106-3471C5F48D22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{35E70284-CA7A-4A02-93B8-09D2D1103435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35E70284-CA7A-4A02-93B8-09D2D1103435}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35E70284-CA7A-4A02-93B8-09D2D1103435}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35E70284-CA7A-4A02-93B8-09D2D1103435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7C7485-2E76-447D-B106-3471C5F48D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7C7485-2E76-447D-B106-3471C5F48D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7C7485-2E76-447D-B106-3471C5F48D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7C7485-2E76-447D-B106-3471C5F48D22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {471BD72B-A248-4B7B-9243-4C6D48424F3F}
+		SolutionGuid = {2BF3C1C8-4E40-4470-AAFC-587ADCBD6CA8}
 	EndGlobalSection
 EndGlobal
