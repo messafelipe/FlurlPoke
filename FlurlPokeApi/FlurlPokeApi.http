@@ -1,6 +1,0 @@
-@FlurlPokeApi_HostAddress = http://localhost:5172
-
-GET {{FlurlPokeApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
