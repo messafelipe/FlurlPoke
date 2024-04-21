@@ -1,4 +1,4 @@
-﻿namespace FlurlPokeApi.Connection
+﻿namespace FlurlPoke.Api.Connection
 {
     public class PokeConnection
     {

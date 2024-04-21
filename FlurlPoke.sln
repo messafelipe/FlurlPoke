@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlurlPoke.Api", "FlurlPokeApi\FlurlPoke.Api.csproj", "{0E91A75D-344F-4CFB-9158-04948218BC0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlurlPoke.Api", "FlurlPoke.Api\FlurlPoke.Api.csproj", "{0E91A75D-344F-4CFB-9158-04948218BC0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace FlurlPokeApi.Controllers
+namespace FlurlPoke.Api.Controllers
 {
     public class PokemonController : ControllerBase
     {

@@ -1,4 +1,4 @@
-﻿namespace FlurlPokeApi.Models
+﻿namespace FlurlPoke.Api.Models
 {
     public class PokemonModel
     {
