@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlurlPoke.Api", "FlurlPoke.Api\FlurlPoke.Api.csproj", "{0E91A75D-344F-4CFB-9158-04948218BC0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlurlPoke.Api", "FlurlPoke.Api\FlurlPoke.Api.csproj", "{0E91A75D-344F-4CFB-9158-04948218BC0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlurlPoke.Application", "FlurlPoke.Application\FlurlPoke.Application.csproj", "{6CCAA40C-3DC4-4EF7-80F2-5B9D2DE772C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlurlPoke.Infrastructure", "FlurlPoke.Infrastructure\FlurlPoke.Infrastructure.csproj", "{BDB65B30-32DB-43D9-8D51-9A86A601177E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{0E91A75D-344F-4CFB-9158-04948218BC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E91A75D-344F-4CFB-9158-04948218BC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E91A75D-344F-4CFB-9158-04948218BC0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CCAA40C-3DC4-4EF7-80F2-5B9D2DE772C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CCAA40C-3DC4-4EF7-80F2-5B9D2DE772C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CCAA40C-3DC4-4EF7-80F2-5B9D2DE772C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CCAA40C-3DC4-4EF7-80F2-5B9D2DE772C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB65B30-32DB-43D9-8D51-9A86A601177E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB65B30-32DB-43D9-8D51-9A86A601177E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB65B30-32DB-43D9-8D51-9A86A601177E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB65B30-32DB-43D9-8D51-9A86A601177E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
