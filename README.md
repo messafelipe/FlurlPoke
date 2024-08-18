@@ -20,7 +20,7 @@ Atualmente, o projeto possui os seguintes endpoints:
 
 3. **DownloadPokemonImageAsync**: Faz o download da imagem frontal de um Pokémon especificado e a salva na pasta de imagens no desktop.
 
-4. **GetPaginatedPokemonNamesAsync**: Recupera uma lista paginada de nomes de Pokémon com base no deslocamento e no limite especificados.
+4. **GetPaginatedPokemonNamesAsync**: Recupera uma lista paginada de nomes de Pokémon com base no deslocamento e no limite especificado.
 
 ## Contribuição
 
