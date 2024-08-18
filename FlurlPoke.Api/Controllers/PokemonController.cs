@@ -4,28 +4,39 @@ using Microsoft.AspNetCore.Mvc;
 namespace FlurlPoke.Api.Controllers
 {
     [Route("api/Pokemon")]
-    public class PokemonController : ControllerBase
+    public class PokemonController(IPokemonService pokemonService) : ControllerBase
     {
+        private readonly IPokemonService _pokemonService = pokemonService;
 
-        private readonly IPokemonService _pokemonService;
+        [HttpGet("getLimitedPokemonListAsync")]
+        public async Task<IActionResult> GetLimitedPokemonListAsync(int limit)
+        {
+            var pokemon = await _pokemonService.GetLimitedPokemonListAsync(limit);
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="pokemonService"></param>
-        public PokemonController(IPokemonService pokemonService) {
-        
-            _pokemonService = pokemonService;
+            return Ok(pokemon);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        public IActionResult GetAll(int limit)
+        [HttpGet("getPokemonAbilitiesAsync")]
+        public async Task<IActionResult> GetPokemonAbilitiesAsync(string namePokemon)
         {
-            var pokemon = _pokemonService.GetAll(limit);
+            var pokemon = await _pokemonService.GetPokemonAbilitiesAsync(namePokemon);
+
+            return Ok(pokemon);
+        }
+
+        [HttpGet("downloadPokemonImageAsync")]
+        public async Task<IActionResult> DownloadPokemonImageAsync(string namePokemon)
+        {
+            var pokemon = await _pokemonService.DownloadPokemonImageAsync(namePokemon);
+
+            return Ok(pokemon);
+        }
+
+        [HttpGet("getPaginatedPokemonNamesAsync")]
+        public async Task<IActionResult> GetPaginatedPokemonNamesAsync(int offset, int limit)
+        {
+            var pokemon = await _pokemonService.GetPaginatedPokemonNamesAsync(offset, limit);
+
             return Ok(pokemon);
         }
     }

@@ -1,10 +1,15 @@
 ﻿using FlurlPoke.Application.InputModels;
-using Microsoft.AspNetCore.Mvc;
 
 namespace FlurlPoke.Application.Services.Interfaces
 {
     public interface IPokemonService
     {
-        NamedAPIResourceList GetAll(int limit);
+        Task<APIResourceList> GetLimitedPokemonListAsync(int limit);
+
+        Task<List<Abilities>> GetPokemonAbilitiesAsync(string namePokemon);
+
+        Task<string> DownloadPokemonImageAsync(string namePokemon);
+
+        Task<List<string?>> GetPaginatedPokemonNamesAsync(int offset, int limit);
     }
 }
