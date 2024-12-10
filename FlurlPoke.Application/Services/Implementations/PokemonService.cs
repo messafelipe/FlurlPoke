@@ -92,5 +92,29 @@ namespace FlurlPoke.Application.Services.Implementations
 
             return pokemonNames;
         }
+
+        /// <summary>
+        /// Recupera as localizações onde um Pokémon específico pode ser encontrado.
+        /// </summary>
+        /// <param name="namePokemon">O nome do Pokémon</param>
+        /// <returns>Uma lista de localizações onde o Pokémon pode ser encontrado.</returns>
+        public async Task<List<string?>?> GetPokemonLocationsAsync(string namePokemon)
+        {
+            var result = await _pokeConnection.ConnectToApi()
+                                              .AppendPathSegment("pokemon")
+                                              .AppendPathSegment($"{namePokemon.ToLower()}")
+                                              .AppendPathSegment("encounters")
+                                              .GetStringAsync();
+
+            var encounterData = JArray.Parse(result);
+
+            var locations = encounterData
+                .Select(location => location["location_area"]?["name"]?.ToString())
+                .Where(name => !string.IsNullOrEmpty(name))
+                .Distinct()
+                .ToList();
+
+            return locations ?? [];
+        }
     }
 }

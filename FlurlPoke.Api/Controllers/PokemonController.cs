@@ -39,5 +39,18 @@ namespace FlurlPoke.Api.Controllers
 
             return Ok(pokemon);
         }
+
+        [HttpGet("getPokemonLocationsAsync")]
+        public async Task<IActionResult> GetPokemonLocationsAsync(string namePokemon)
+        {
+            var locations = await _pokemonService.GetPokemonLocationsAsync(namePokemon);
+
+            if (locations == null || locations.Count == 0)
+            {
+                return NotFound($"Nenhuma localização encontrada para o Pokémon {namePokemon}.");
+            }
+
+            return Ok(locations);
+        }
     }
 }

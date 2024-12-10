@@ -11,5 +11,7 @@ namespace FlurlPoke.Application.Services.Interfaces
         Task<string> DownloadPokemonImageAsync(string namePokemon);
 
         Task<List<string?>> GetPaginatedPokemonNamesAsync(int offset, int limit);
+
+        Task<List<string?>?> GetPokemonLocationsAsync(string namePokemon);
     }
 }
