@@ -4,15 +4,13 @@
 
 ![5](https://github.com/user-attachments/assets/aedca371-396b-400a-8d00-d817293f778d)
 
-O objetivo principal é aplicar, na prática, os conhecimentos adquiridos ao longo do processo de aprendizado.
-
-A ideia é expandir e melhorar continuamente à medida que novos conhecimentos são adquiridos.
+O objetivo principal foi aplicar, na prática, os conhecimentos adquiridos ao longo do processo de aprendizado.
 
 # Endpoints
 
-Atualmente, o projeto possui os seguintes endpoints:
+O projeto possui os seguintes endpoints:
 
-![1](https://github.com/user-attachments/assets/d28f6feb-f0cb-47cd-baf7-44748d698eb7)
+![image](https://github.com/user-attachments/assets/6041993b-7bd0-41cc-b69a-98385c0d4219)
 
 1. **GetLimitedPokemonListAsync**: Recupera uma lista de Pokémon com um limite especificado no número de resultados.
 
@@ -22,10 +20,10 @@ Atualmente, o projeto possui os seguintes endpoints:
 
 4. **GetPaginatedPokemonNamesAsync**: Recupera uma lista paginada de nomes de Pokémon com base no deslocamento e no limite especificado.
 
+5. **GetPokemonLocationsAsync**: Recupera as localizações onde um Pokémon específico pode ser encontrado.
+
 ## Contribuição
 
 Sinta-se à vontade para contribuir com sugestões, melhorias ou correções. 
 
 O aprendizado é contínuo, e toda ajuda é bem-vinda!
-
-**Observação:** Este projeto está em desenvolvimento ativo e pode sofrer alterações frequentes.
